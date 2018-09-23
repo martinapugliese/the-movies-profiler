@@ -1,0 +1,74 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Welcome to MoviesInfo!</title>
+    <meta name="description" content="A small similarity engine">
+    <!--<link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1>
+        Search for a movie title!
+        <img src="https://cdn.glitch.com/e7ec7f04-9796-4805-b013-6461fc4f8eab%2Ftmdb-logo-green.svg?1537712721227" alt="logo" />
+      </h1>
+    </header>
+  
+    
+    <main>
+      
+      
+      <p>If you'd have to pick 10 movies you like, which would you choose?</p>
+      
+      <p class="bold">Tell me the title of a movie!</p>
+      
+      <form>
+        <input type="text" maxlength="100" placeholder="Feed me a movie title!">
+        <button type="submit">Get info</button>        
+      </form>
+            
+      <div>
+          <p id="p1"></p>
+          <p id="movie-overview"></p>
+        
+          <p id="movie-title"></p>
+          <p id="movie-original-title"></p>
+          <p id="movie-original-language"></p>
+        
+          <p class="bold">Here's the scores of the movie:</p>
+          <p id="movie-score"></p>
+          <p id="movie-cast-score"></p>
+          <p id="movie-money"></p>
+          <p id="movie-release-date"></p>
+          <!--<img id="img">-->
+        
+      </div>
+      
+      
+      
+    </main>
+
+    <!-- Importing libs and scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous">
+    </script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
